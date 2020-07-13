@@ -1,6 +1,5 @@
-# abdrashov.github.io
 <p align="center">
-  <a href="https://anuraghazra.github.io/">
+  <a href="https://abdrashov.github.io/">
     <img alt="abdr" src="/image/logo.png" width="120" />
     <h2 align="center">Abdrashov Zamanbek</h2>
   </a>
