@@ -44,7 +44,7 @@ for (let anchor of anchors){
 }
 
 window.onscroll = function showHeader() {
-	const top = document.querySelector('.top_block');
+	let top = document.querySelector('.top_block');
 
 	if(window.pageYOffset > 500 && window.innerWidth < 768){
 		top.style.display = "block";
@@ -54,8 +54,46 @@ window.onscroll = function showHeader() {
 	}
 }
 
-function checkImage(id){
-	let img = document.querySelector(".background_image");
+function checkImage(n){
+	let img = document.querySelectorAll(".image_background");
+	let times = document.querySelector(".top_times");
+	let top = document.querySelector('.top_block');
+	let imgBefore = document.querySelectorAll(".image_before");
+
+	let body = document.body;
+
+		img[n].addEventListener( "click" , function(){
+			body.style.overflow = "hidden";
+			times.style.display = "flex";
+			top.style.display = "";
+			img[n].classList.add("image_js");
+			imgBefore[n].style.display = "block";
+		})
 	
-	img.classList.add('img_ab');
+		times.addEventListener( "click" , function(){
+			img[n].classList.remove('image_js');
+			body.style.overflow = "";
+			times.style.display = "";
+			imgBefore[n].style.display = "";
+		})
+}
+function checkImageMobile(i){
+	let img = document.querySelectorAll(".image_mobile");
+	let times = document.querySelector(".top_times");
+	let top = document.querySelector('.top_block');
+
+	let body = document.body;
+
+		img[i].addEventListener( "click" , function(){
+			body.style.overflow = "hidden";
+			times.style.display = "flex";
+			top.style.display = "";
+			img[i].className = "image_js_mobile";
+		})
+	
+		times.addEventListener( "click" , function(){
+			img[i].className = "image_mobile";
+			body.style.overflow = "";
+			times.style.display = "";
+		})
 }
