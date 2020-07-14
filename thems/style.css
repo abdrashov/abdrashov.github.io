@@ -630,7 +630,10 @@ footer:before{
 	}
 	@keyframes showUp{
 		0%{bottom: 0px; opacity: 0}
-		50%{bottom: 25px; opacity: 1}
+		40%{bottom: 25px; opacity: .9}
+		52%{bottom: 25px; opacity: 1}
+		48%{bottom: 25px; opacity: 1}
+		60%{bottom: 25px; opacity: .9}
 		100%{bottom: 50px; opacity: 0}
 	}
 }
