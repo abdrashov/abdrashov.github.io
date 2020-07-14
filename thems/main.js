@@ -1,11 +1,7 @@
-
-
-
-
 function checkFluency(){
 	let varcheckbox = document.getElementById('burger');
 	let menu = document.querySelector('.header_menu_list');	
-	let main = document.querySelector('main');
+	let main = document.querySelector('header');
 	let body = document.body;
 	let tool = document.querySelectorAll('.tool');	
 	varcheckbox.addEventListener( "click" , function(){
@@ -46,4 +42,16 @@ for (let anchor of anchors){
             block: "start"
         })
     })
+}
+
+
+window.onscroll = function showHeader() {
+	const top = document.querySelector('.top_block');
+
+	if(window.pageYOffset > 500){
+		top.style.display = "block";
+
+	} else{
+		top.style.display = "";
+	}
 }
