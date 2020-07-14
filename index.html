@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta charset="UTF-8">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="Abdrashov Zamanbek">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<link rel="stylesheet" href="thems/style.css">
-	<script src="thems/main.js"></script>
+	<script src="thems/main.js" defer=""></script>
 	<title>Abdrashov Zamanbek | github.com</title>
 
 </head>
@@ -21,13 +21,13 @@
 			<div class="header_menu">
 				<nav>
 					<ul class="header_menu_list">
-						<li><a href="#">Home</a></li>
+						<li><a href="#homee">Home</a></li>
 						<li><a href="#aboutt">About me</a></li>
 						<li><a href="#projectss">Projects</a></li>
 					</ul>
 				</nav>
-				<label class="burger">
-					<input class="checker" type="checkbox" id="burger" onclick="checkFluency()">
+				<label class="burger" id="burger">
+					<input class="checker" type="checkbox" onclick="checkFluency()" id="checked">
 					<span class="burger__line burger__line_first"></span>
 					<span class="burger__line burger__line_second"></span>
 					<span class="burger__line burger__line_third"></span>
@@ -141,7 +141,7 @@
 			</div>
 		</article>
 		
-		<article class="about" id="aboutt">
+		<article id="aboutt" class="about">
 			<div class="container">
 				<h2 style="color: #fff">About Me</h2>
 				<div class="about_blogs">

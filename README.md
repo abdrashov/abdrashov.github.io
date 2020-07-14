@@ -1,8 +1,8 @@
 <p align="center">
-  <a href="https://abdrashov.github.io/">
-    <img alt="abdr" src="/image/logo.png" width="120" />
-    <h2 align="center">Abdrashov Zamanbek</h2>
-  </a>
+    <a href="https://abdrashov.github.io/">
+        <img alt="abdr" src="/image/logo.png" width="120" />
+        <h2 align="center">Abdrashov Zamanbek</h2>
+    </a>
 </p> 
 <p align="center">Creative FrontEnd Web Developer</p>
 
