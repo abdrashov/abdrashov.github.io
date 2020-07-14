@@ -1,9 +1,8 @@
 function checkFluency(){
 	let varcheckbox = document.getElementById('burger');
 	let menu = document.querySelector('.header_menu_list');	
-	let main = document.querySelector('header');
+	let main = document.querySelector('main');
 	let body = document.body;
-	let tool = document.querySelectorAll('.tool');	
 	varcheckbox.addEventListener( "click" , function(){
 		if( body.style.overflow == "hidden" ){
 			menu.style.display = "";
