@@ -1,3 +1,6 @@
+
+
+
 function checkFluency(){
 	let varcheckbox = document.getElementById('burger');
 	let menu = document.querySelector('.header_menu_list');	
