@@ -43,14 +43,19 @@ for (let anchor of anchors){
     })
 }
 
-
 window.onscroll = function showHeader() {
 	const top = document.querySelector('.top_block');
 
-	if(window.pageYOffset > 500){
+	if(window.pageYOffset > 500 && window.innerWidth < 768){
 		top.style.display = "block";
 
 	} else{
 		top.style.display = "";
 	}
+}
+
+function checkImage(id){
+	let img = document.querySelector(".background_image");
+	
+	img.classList.add('img_ab');
 }

@@ -451,7 +451,6 @@ main:before{
 
 
 .featured_works_work{
-	position: relative;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 40px;
@@ -468,7 +467,7 @@ main:before{
 .featured_works_block:hover img{
 	box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 20px 0px;
 	border-radius: 2px;
-	transform: scale(1.04);
+	transform: scale(1.07);
 }
 .featured_works_block:hover{
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
@@ -562,7 +561,9 @@ footer:before{
 	width: 100%;
 	border-radius: 0 0 10% 150%;
 }
-
+.top_block{
+	display: none;
+}
 @media screen and (max-width: 1180px){
 	.image_mobile{
 		top: 38%;
