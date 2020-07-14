@@ -661,19 +661,22 @@ footer:before{
 		position: fixed;
 		color: #3c2922;
 		font-size: 28px;
-		bottom: 0;
 		right: 20px;
 		z-index: 10;
 		opacity: 0;
-		animation: showUp 3.5s infinite;
+		animation: showUp linear  infinite 10s;
 	}
 	@keyframes showUp{
 		0%{bottom: 0px; opacity: 0}
-		40%{bottom: 25px; opacity: .9}
-		52%{bottom: 25px; opacity: 1}
-		48%{bottom: 25px; opacity: 1}
-		60%{bottom: 25px; opacity: .9}
-		100%{bottom: 50px; opacity: 0}
+		10%{bottom: 25px; opacity: .9}	
+		15%{bottom: 25px; opacity: 1}	
+		20%{bottom: 25px; opacity: .9}
+		30%{bottom: 50px; opacity: 0}
+
+
+
+		31%{bottom: 0px; opacity: 0}
+		100%{bottom: 0px; opacity: 0}
 	}	
 
 }
