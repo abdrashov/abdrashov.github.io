@@ -669,9 +669,9 @@ footer:before{
 	}
 	@keyframes showUp{
 		0%{bottom: 0px; opacity: 0}
-		10%{bottom: 25px; opacity: .9}	
+		5%{bottom: 25px; opacity: .9}	
 		15%{bottom: 25px; opacity: 1}	
-		20%{bottom: 25px; opacity: .9}
+		25%{bottom: 25px; opacity: .9}
 		30%{bottom: 50px; opacity: 0}
 
 
