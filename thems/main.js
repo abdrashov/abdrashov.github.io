@@ -1,6 +1,4 @@
 
-
-
 function checkFluency(){
 	let varcheckbox = document.getElementById('burger');
 	let menu = document.querySelector('.header_menu_list');	
@@ -62,19 +60,26 @@ function checkImage(n){
 	let times = document.querySelector(".top_times");
 	let top = document.querySelector('.top_block');
 	let imgBefore = document.querySelectorAll(".image_before");
+	let imgHover = document.querySelectorAll(".featured_works_block");
 
 	let body = document.body;
 
 		img[n].addEventListener( "click" , function(){
+			img[n].className = "image_js_mobile";
+
+			imgHover[n].classList.remove("hover");
+
 			body.style.overflow = "hidden";
 			times.style.display = "flex";
 			top.style.display = "";
-			img[n].classList.add("image_js");
 			imgBefore[n].style.display = "block";
 		})
 	
 		times.addEventListener( "click" , function(){
-			img[n].classList.remove('image_js');
+			img[n].className = "image_background";
+
+			imgHover[n].classList.add("hover");
+
 			body.style.overflow = "";
 			times.style.display = "";
 			imgBefore[n].style.display = "";
@@ -84,18 +89,25 @@ function checkImageMobile(i){
 	let img = document.querySelectorAll(".image_mobile");
 	let times = document.querySelector(".top_times");
 	let top = document.querySelector('.top_block');
+	let imgHover = document.querySelectorAll(".featured_works_block");
 
 	let body = document.body;
 
 		img[i].addEventListener( "click" , function(){
+			imgHover[i].classList.remove('hover');
+
+			img[i].className = "image_js_mobile";
+
 			body.style.overflow = "hidden";
 			times.style.display = "flex";
 			top.style.display = "";
-			img[i].className = "image_js_mobile";
 		})
 	
 		times.addEventListener( "click" , function(){
+			imgHover[i].classList.add('hover');
+
 			img[i].className = "image_mobile";
+
 			body.style.overflow = "";
 			times.style.display = "";
 		})
