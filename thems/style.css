@@ -572,7 +572,7 @@ main:before{
 	right: 10px;
 	width: 120px;
 	height: 220px;
-	box-shadow: rgba(0, 0, 0, 0.88) 1px 0px 16px 2px;
+	box-shadow: #00000059 0px 3px 5px 0px;
 }
 .image_mobile img{
 	width: 100%;
