@@ -56,16 +56,47 @@ header>div{
 	letter-spacing: 1px;
 }
 .header_menu_list li a{
-	padding: 20px 35px;
+	padding: 20px 5px;
+	margin: 0 25px;
 	color: #fff;
-	-webkit-transition: .3s color ease;
-	transition: .3s color ease;
 }
 .header_menu_list li:last-child a{
-	padding-right: 0;
+	margin-right: 0;
 }
-.header_menu_list li:hover a{
-	color: #221f1c;
+.underline-btn {
+	position: relative;
+	color: #fff;
+}
+.underline-btn:before, .underline-btn:after {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 0;
+}
+.underline-btn:before {
+	transition: width 0s ease, background 0.4s ease;
+	left: 0;
+	right: 0;
+	bottom: 6px;
+}
+.underline-btn:after {
+	right: 2.2%;
+	bottom: 6px;
+	background: #fff;
+	transition: width 0.5s ease;
+	border-radius: 4px;
+}
+.underline-btn:hover:before {
+	width: 97.8%;
+	background: #fff;
+	transition: width 0.5s ease;
+	border-radius: 4px;
+}
+.underline-btn:hover:after {
+	width: 97.8%;
+	background: 0 0;
+	transition: all 0s ease;
 }
 .burger{
 	width: 30px;
@@ -108,7 +139,6 @@ header>div{
 	-webkit-transform: rotate(-225deg);
 	        transform: rotate(-225deg);
 }
-
 
 
 main{
@@ -811,11 +841,8 @@ footer:before{
 		        transform: translate(-50%, 70%);
 		line-height: 2.4;
 	}
-	.header_menu_list li:last-child a{
-		padding: 0;
-	}
 	.header_menu_list li a{
-		padding: 0;
+		margin: 0;
 	}
 	.header_menu_list li{
 		display: block;
