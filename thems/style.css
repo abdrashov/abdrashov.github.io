@@ -343,9 +343,10 @@ main:before{
 	top: 0;
 	left: 0;
 	height: 100%;
-	animation: 3.5s showSkillsEffect;
-	background:  -webkit-linear-gradient(top, #ffaf5d, #ff6636);
-	background:  linear-gradient(180deg, #ffaf5d, #ff6636);
+	-webkit-animation: 3.5s showSkillsEffect;
+	        animation: 3.5s showSkillsEffect;
+    background: -webkit-linear-gradient(right, #ffbf60, #ff7347);
+    background: linear-gradient(to left, #ffbf60, #ff7347);
 }
 @keyframes showSkillsEffect{
 	0%{width: 0%;}
