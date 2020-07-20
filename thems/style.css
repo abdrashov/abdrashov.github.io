@@ -62,7 +62,7 @@ header>div{
 	transition: .3s color ease;
 }
 .header_menu_list li:last-child a{
-	padding: 0 0 0 35px;
+	padding-right: 0;
 }
 .header_menu_list li:hover a{
 	color: #221f1c;
@@ -142,7 +142,7 @@ main:before{
 
 .home{
 	position: relative;
-	padding: 20px;
+	padding: 60px 20px;
 	min-height: 100vh;
 	width: 100%;
 	display: -webkit-box;
@@ -745,8 +745,8 @@ footer:before{
 	.featured_works_work{
 		grid-column-gap: 10px;
 	}
-	.home_text{
-		padding-top: 50px;
+	.home_text, .home_skils{
+		padding-top: 40px;
 	}
 	.image_background{
 		height: 250px;
