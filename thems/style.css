@@ -558,6 +558,7 @@ main:before{
 .hover:hover img{
 	-webkit-transform: scale(1.07);
 	        transform: scale(1.07);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px 0px;
 }
 .featured_works_block a:first-child{
 	display: block;
@@ -764,6 +765,7 @@ footer:before{
 	.hover:hover img{
 		-webkit-transform: scale(1);
 		        transform: scale(1);
+		box-shadow: none;
 	}
 	.image_background{
 		height: 380px;
