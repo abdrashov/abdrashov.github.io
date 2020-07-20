@@ -552,8 +552,8 @@ main:before{
 	border-radius: 3px;
 }
 .hover img{
-	-webkit-transition: .3s ease transform;
-	transition: .3s ease transform;
+	-webkit-transition: .3s ease transform, .7s ease box-shadow;
+	transition: .3s ease transform, .7s ease box-shadow;
 }
 .hover:hover img{
 	-webkit-transform: scale(1.07);
