@@ -226,7 +226,7 @@ main:before{
 	font-weight: 700;
 	font-size: 3.2em;
 	line-height: 1.1;
-	padding-bottom: 12px;
+	margin-bottom: 12px;
 }
 .home_text_hello{
 	font-size: 20px;
