@@ -344,7 +344,7 @@ main:before{
 }
 .skills{
 	position: relative;
-	padding: 15px 0;
+	margin: 15px 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
