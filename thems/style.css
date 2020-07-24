@@ -22,7 +22,7 @@ h2{
 	font-size: 2.6em;
 	letter-spacing: 1px;
 	text-align: center;
-	padding: 0 0 30px;
+	margin: 0 0 30px;
 	text-transform: capitalize;
 }
 .container{
@@ -400,6 +400,7 @@ main:before{
 	grid-row-gap: 20px;
 }
 .love_blog{
+	padding: 0 20px 20px;
 	background: #fff;
 	border-radius: 7px;
 	box-shadow: #00000025 0 5px 10px 1px;
@@ -424,7 +425,6 @@ main:before{
 	background: linear-gradient(45deg, #ff6636, #ffc166);
 }
 .love_text{
-	padding: 0 20px 20px 20px;
 	text-align: center;
 }
 .love_text p{
@@ -433,7 +433,7 @@ main:before{
 .love_text h3{
 	color: var(--main-txt-color);
 	font-size: 1.5em;
-	padding-bottom: 20px;
+	margin-bottom: 15px;
 	letter-spacing: 1px;
 }
 .svg-icon {
