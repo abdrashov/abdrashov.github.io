@@ -581,11 +581,11 @@ main:before{
 	transition: .4s ease box-shadow;
 	border-radius: 3px;
 }
-.hover img{
+.image_background img, .image_mobile img{
 	-webkit-transition: .3s ease transform, .7s ease box-shadow;
 	transition: .3s ease transform, .7s ease box-shadow;
 }
-.hover:hover img{
+.image_background:hover img, .image_mobile:hover img{
 	-webkit-transform: scale(1.07);
 	        transform: scale(1.07);
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px 0px;
@@ -706,8 +706,8 @@ main:before{
 .open_source_work{
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-	    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	-ms-grid-columns: (minmax(280px, 1fr))[auto-fit];
+	    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 	grid-column-gap: 40px;
 	grid-row-gap: 40px;	
 	-webkit-box-align: center;
