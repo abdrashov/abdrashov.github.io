@@ -590,8 +590,11 @@ main:before{
 	        transform: scale(1.07);
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px 0px;
 }
-.featured_works_block a:first-child{
+.featured_works_block a{
 	display: block;
+	transition: .3s ease-out transform;
+}
+.featured_works_block a:first-child{
 	padding: 20px;
 	font-weight: bold;
 	font-size: 17px;
@@ -603,6 +606,12 @@ main:before{
 }
 .featured_works_block:hover{
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 26px 0px;
+}
+.featured_works_block:hover a:first-child{
+	transform: translateY(-10px);
+}
+.featured_works_block:hover a:last-child{
+	transform: translateY(10px);
 }
 .image_background{
 	height: 380px;
