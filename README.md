@@ -31,7 +31,7 @@ A quick look at the folder structure of this project.
 
 ## Tools Used
 
-1. html (of course 🙈)
+1. html (of course)
 2. css
 3. javascript
 
