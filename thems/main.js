@@ -44,16 +44,16 @@ for (let anchor of anchors){
     })
 }
 
-window.onscroll = function showHeader() {
-	let top = document.querySelector('.top_block');
+// window.onscroll = function showHeader() {
+// 	let top = document.querySelector('.top_block');
 
-	if(window.pageYOffset > 500 && window.innerWidth < 768){
-		top.style.display = "block";
+// 	if(window.pageYOffset > 500 && window.innerWidth < 768){
+// 		top.style.display = "block";
 
-	} else{
-		top.style.display = "";
-	}
-}
+// 	} else{
+// 		top.style.display = "";
+// 	}
+// }
 
 function checkImage(n){
 	let img = document.querySelectorAll(".image_background");
