@@ -1,246 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="Abdrashov Zamanbek">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="apple-mobile-web-app-enabled" content="yes">
-	<link rel="shortcut icon" href="image/logo.png" type="image/png">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-	<link rel="stylesheet" href="thems/style.css">
-	<script src="thems/main.js" defer=""></script>
+	<meta charset="utf-8">
+	<title>Abdrashov Zamanbek | github</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	 
+	 <style>
+    
+    html, body {
+  margin:0;border:0;padding:0;
+  font-size:16px;
+  font-family: 'Poppins', sans-serif;
+  overflow-x:hidden;
+  position: relative;
+  vertical-align: baseline;
+ background-color: #7f5a83;
+background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
 
-	<title>Abdrashov Zamanbek | github.com</title>
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript" >
-	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-		m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+}
 
-		ym(65616697, "init", {
-			clickmap:true,
-			trackLinks:true,
-			accurateTrackBounce:true
-		});
-	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/65616697" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ 
+h1 {font-size:40px;}
+h2 {font-size:36px;}
+h3 {font-size:30px;}
+h4 {font-size:24px;}
+h5 {font-size:20px;}
+h6 {font-size:18px;}
+
+h2 {
+  padding-bottom: 14px;
+}
+
+ 
+
+ 
+ 
+
+.tm-title {
+	color: #66CCFF;
+}
+
+.white {
+  color: #fff;
+}
+
+.about,.skills,
+.education,.languages,
+.contact, .experience {
+  padding: 40px;
+  min-height: 330px;
+}
+
+.education, .languages,
+.contact, .experience {
+  margin-top: 30px;
+}
+
+ 
+  
+header {
+  text-align: center;
+  min-height: 400px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 160px;
+  padding-bottom: 140px;
+}
+header img {
+  display: inline-block !important;
+    border: 3px solid white;
+    padding: 5px;
+}
+header h2 {
+  padding-top: 40px;
+}
+    
+         
+         
+         
+         
+         
+/* about section */
+.about {
+  background: #fff;
+  box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
+}
+         
+         
+         
+         
+
+/* skills section */
+.skills {
+  background: #3366CC;
+  color: #f5f5f5;
+}
+.skills .progress {
+  border-radius: 0px;
+  height: 4px;
+}
+.skills .progress .progress-bar-primary {
+  background: #204090;
+}
+.skills strong {
+  display: inline-block;
+  font-weight: normal;
+  padding-bottom: 6px;
+}
+         
+         
+         
+
+/* education section */
+.education {
+  background: #3366CC;
+  color: #f5f5f5;
+}
+.education .education-content {
+  padding-bottom: 14px;
+}
+.education h5 {
+  display: inline-block;
+}
+.education span {
+  padding-right: 10px;
+  padding-left: 20px;
+}
+
+         
+         
+/* languages section */
+.languages {
+  background: #fff; 
+}
+.languages ul {
+  padding: 10px;
+}
+.languages ul li {
+  padding-bottom: 6px;
+}
+
+         
+         
+         
+/* contact section */
+.contact {
+  background: #fff;  
+}
+.contact .fa {
+  padding-right: 6px;
+}
+
+         
+         
+         
+         
+/* experience section */
+.experience {
+  background: #3366CC;
+  color: #f5f5f5;
+}
+ .experience-content {
+  padding-bottom: 14px;
+}
+.experience h5 {
+  display: inline-block;
+}
+.experience span {
+  padding-right: 10px;
+  padding-left: 20px;
+}
+
+         
+         
+         
+         
+         
+         
+/* footer section */
+footer {
+  color: #f9f9f9;
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 100px;
+}
+         
+         
+         
+
+/* social icon section */
+.social-icons {
+  padding: 0;
+  margin: 0;
+}
+.social-icons li {
+  display: inline-block;
+  list-style: none;
+}
+.social-icons li a {
+  background: #3366CC;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  transition: all 0.4s ease-in;
+  position: relative;
+  bottom: 10px;
+  top: 10px;
+}
+.social-icons li a:hover {
+  background: #202020;
+  color: #fff;
+}
+
+@media ( max-width: 980px ) {
+  .skills {
+    margin-top: 30px;
+  }
+}
+
+@media ( max-width: 360px ) {
+  header h1 {
+    font-size: 30px;
+  }
+  .about h2 {
+    font-size: 24px;
+  }
+  .education h4,
+  .experience h4 {
+    font-size: 20px;
+  }
+}
+    
+    
+    </style>
 </head>
 <body>
-	<header>
-		<div class="container">
-			<div class="header_logo">
-				<img src="image/logo.png" alt="Logo">
+
+ 
+<!-- header section -->
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/aboout_me.jpg" class="img-responsive img-circle" width="250">
+				<h1 class="white">Привет, я Заманбек Абдрашов</h1>
+				<h1 class="white">Web&#8212;Разработчик <small>Самоучка</small></h1>
 			</div>
-			<div class="header_menu">
-				<nav>
-					<ul class="header_menu_list">
-						<li><a href="#homee" class="underline-btn">Home</a></li>
-						<li><a href="#aboutt" class="underline-btn">About me</a></li>
-						<li><a href="#projectss" class="underline-btn">Projects</a></li>
+		</div>
+	</div>
+</header>
+
+<!-- about and skills section -->
+<section class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="about">
+				<h3 class="accent">Easy Profile</h3>
+				<h2>Responsive Profile Card</h2>
+				 <p>
+				     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni possimus cum, reprehenderit, tempora voluptatum nostrum sed quidem deleniti eos libero ea, excepturi odio temporibus? Doloribus consequatur ullam, quaerat nihil laudantium, eos quod ab in maiores accusamus fugiat  
+				 </p>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="skills">
+				<h2 class="white">Навыки</h2>
+				<strong>Laravel PHP MySQL</strong>
+				<span class="pull-right">60%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" 
+                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+					</div>
+				<strong>JavaScript Html Css Bootstrap</strong>
+				<span class="pull-right">40%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" 
+                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
+					</div>
+				<strong>Git</strong>
+				<span class="pull-right">65%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" 
+                        aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
+					</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- education and languages -->
+<section class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<div class="education">
+				<h2 class="white">Education</h2>					 
+						<h4 class="education-title ">New Web Design</h4>
+							<div class="education-school">
+								<h5>School of Media</h5><span></span>
+								<h5>2015 March - 2020 November</h5>
+							</div>
+						  <p class="education-description"> 
+						   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates molestias, debitis sunt hic aspernatur cum rerum quis doloribus, consequuntur dolore sit nihil, eligendi optio ullam quos qui labore! Ipsam culpa inventore provident, consectetur  
+						</p>					 
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="languages">
+				<h2>Languages</h2>
+					<ul>
+						<li>Japan / Koumou</li>
+						<li>English / Spanish</li>
+						<li>African / Japanese</li>
+						<li>Arabic / Hebrew</li>
 					</ul>
-				</nav>
-				<label class="burger" id="burger">
-					<input class="checker" type="checkbox" onclick="checkFluency()" id="checked">
-					<span class="burger__line burger__line_first"></span>
-					<span class="burger__line burger__line_second"></span>
-					<span class="burger__line burger__line_third"></span>
-					<span class="burger__line burger__line_fourth"></span>
-				</label>
 			</div>
 		</div>
-	</header>
-	<main>
-		<div class="home" id="homee">
-			<div class="container">
-				<div class="home_text">
-					<p class="home_text_hello">Привет, Я</p>
-					<h1 class="home_text_name">Абдрашов Заманбек</h1>
-					<p class="home_text_profession">JUNIOR WEB DEVELOPER - <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%BC%D0%BE%D1%83%D1%87%D0%BA%D0%B0" target="_blank">самоучка</a></p>
-					<a href="https://docs.google.com/document/d/1tl2FNYe5tbDHkS-R7uog4iO2hBJGGcY_bMM7FpkP5b8/edit?usp=sharing" class="home_resume" target="_blank">
-						<span>Download Resume</span>
-					</a>
-					<p class="home_text_link">
-						<a href="https://github.com/abdrashov" target="_blank">
-							<i class="fab fa-github-alt"></i>
-						</a>
-						<a href="mailto:abdrashoff@gmail.com" target="_blank">
-							<i class="fab fa-google"></i>
-						</a>
-					</p>
-				</div>
-				<div class="home_skils">
-					<div class="skills">
-						<span>HTML</span>
-						<div class="skills_block">
-							<div class="skills_effect htmlCss" style="width: 70%;"></div>
-						</div>
-						<span>70%</span>
-					</div>
-					<div class="skills">
-						<span>CSS</span>
-						<div class="skills_block">
-							<div class="skills_effect htmlCss" style="width: 60%;"></div>
-						</div>
-						<span>60%</span>
-					</div>
-					<div class="skills">
-						<span>JavaScript</span>
-						<div class="skills_block">
-							<div class="skills_effect javascript" style="width: 10%;"></div>
-						</div>
-						<span>10%</span>
-					</div>
-					<div class="skills">
-						<span>PHP/MySql</span>
-						<div class="skills_block">
-							<div class="skills_effect " style="width: 40%;"></div>
-						</div>
-						<span>40%</span>
-					</div>
-					<div class="skills">
-						<span>Laravel</span>
-						<div class="skills_block">
-							<div class="skills_effect " style="width: 45%;"></div>
-						</div>
-						<span>45%</span>
-					</div>
-				</div>
-			</div>
-		</div>
+	</div>
+</section>
 
-		<article class="love">
-			<div class="container">
-				<h2 style="color: #fff">Things I love</h2>
-				<div class="love_blogs">
-					<div class="love_blog">
-						<div class="love_round">
-							<svg class="svg-icon" viewBox="0 0 640 512">
-								<path fill="currentColor" d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"></path>
-							</svg>
-						</div>
-						<div class="love_text">
-							<h3>FrontEnd</h3>
-							<p>
-								Разбираюсь в коде HTML, CSS, Bootstrap, JavaScript.
-							</p>
-						</div>
-					</div>
-					<div class="love_blog">
-						<div class="love_round">
-							<svg class="svg-icon" viewBox="0 0 20 20">
-								<path d="M6.176,7.241V6.78c0-0.221-0.181-0.402-0.402-0.402c-0.221,0-0.403,0.181-0.403,0.402v0.461C4.79,7.416,4.365,7.955,4.365,8.591c0,0.636,0.424,1.175,1.006,1.35v3.278c0,0.222,0.182,0.402,0.403,0.402c0.222,0,0.402-0.181,0.402-0.402V9.941c0.582-0.175,1.006-0.714,1.006-1.35C7.183,7.955,6.758,7.416,6.176,7.241 M5.774,9.195c-0.332,0-0.604-0.272-0.604-0.604c0-0.332,0.272-0.604,0.604-0.604c0.332,0,0.604,0.272,0.604,0.604C6.377,8.923,6.105,9.195,5.774,9.195 M10.402,10.058V6.78c0-0.221-0.181-0.402-0.402-0.402c-0.222,0-0.402,0.181-0.402,0.402v3.278c-0.582,0.175-1.006,0.714-1.006,1.35c0,0.637,0.424,1.175,1.006,1.351v0.461c0,0.222,0.181,0.402,0.402,0.402c0.221,0,0.402-0.181,0.402-0.402v-0.461c0.582-0.176,1.006-0.714,1.006-1.351C11.408,10.772,10.984,10.233,10.402,10.058M10,12.013c-0.333,0-0.604-0.272-0.604-0.604S9.667,10.805,10,10.805c0.332,0,0.604,0.271,0.604,0.604S10.332,12.013,10,12.013M14.629,8.448V6.78c0-0.221-0.182-0.402-0.403-0.402c-0.221,0-0.402,0.181-0.402,0.402v1.668c-0.581,0.175-1.006,0.714-1.006,1.35c0,0.636,0.425,1.176,1.006,1.351v2.07c0,0.222,0.182,0.402,0.402,0.402c0.222,0,0.403-0.181,0.403-0.402v-2.07c0.581-0.175,1.006-0.715,1.006-1.351C15.635,9.163,15.21,8.624,14.629,8.448 M14.226,10.402c-0.331,0-0.604-0.272-0.604-0.604c0-0.332,0.272-0.604,0.604-0.604c0.332,0,0.604,0.272,0.604,0.604C14.83,10.13,14.558,10.402,14.226,10.402 M17.647,3.962H2.353c-0.221,0-0.402,0.181-0.402,0.402v11.27c0,0.222,0.181,0.402,0.402,0.402h15.295c0.222,0,0.402-0.181,0.402-0.402V4.365C18.05,4.144,17.869,3.962,17.647,3.962 M17.245,15.232H2.755V4.768h14.49V15.232z"></path>
-							</svg>
-						</div>
-						<div class="love_text">
-							<h3>Php</h3>
-							<p>Я более ориентирован на BackEnd. PHP</p>
-						</div>
-					</div>
-					<div class="love_blog">
-						<div class="love_round">
-							<svg class="svg-icon" viewBox="0 0 512 512">
-								<path fill="currentColor" d="M167.02 309.34c-40.12 2.58-76.53 17.86-97.19 72.3-2.35 6.21-8 9.98-14.59 9.98-11.11 0-45.46-27.67-55.25-34.35C0 439.62 37.93 512 128 512c75.86 0 128-43.77 128-120.19 0-3.11-.65-6.08-.97-9.13l-88.01-73.34zM457.89 0c-15.16 0-29.37 6.71-40.21 16.45C213.27 199.05 192 203.34 192 257.09c0 13.7 3.25 26.76 8.73 38.7l63.82 53.18c7.21 1.8 14.64 3.03 22.39 3.03 62.11 0 98.11-45.47 211.16-256.46 7.38-14.35 13.9-29.85 13.9-45.99C512 20.64 486 0 457.89 0z"></path>
-							</svg>
-						</div>
-						<div class="love_text">
-							<h3>Laravel</h3>
-							<p>Разрабатываю сайты на фреймворке Laravel</p>
-						</div>
-					</div>
-				</div>
+<!-- contact and experience -->
+<section class="container">
+	<div class="row">
+		<div class="col-md-4 col-sm-12">
+			<div class="contact">
+				<h2>Contact</h2>
+					<p><i class="fa fa-map-marker"></i> 123 Devli Road, Kenya</p>
+					<p><i class="fa fa-phone"></i> 9898989</p>
+					<p><i class="fa fa-envelope"></i> real@company.com</p>
+					<p><i class="fa fa-globe"></i> www.realcompany.com</p>
 			</div>
-		</article>
-
-		<article id="aboutt" class="about">
-			<div class="container">
-				<h2 style="color: #fff">About Me</h2>
-				<div class="about_blogs">
-					<div class="about_img_round appearances">
-						<img src="image/aboout_me.jpg" alt="About me image">
-					</div>		
-					<div class="about_text">
-						<p>Привет, я - Заманбек Абдрашов, веб-разработчик самоучка, из Казахстана. Я изучаю современные веб-технологии для создания веб-сайтов, которые выглядят великолепно и работают как часы. Особенно я сосредоточен на BackEnd. В настоящее время я изучаю фреймворк Laravel</p>
-						<p>А также я студент технического университета, специальность "математическое компьютерное моделирование". Обожаю математику и программирование.</p>
-					</div>
-				</div>
-				<div class="about_quotes">
-					<div class="about_quotes_block">
-						<p>«Безграмотными в 21 веке будут не те, кто не умеет читать и писать, а те, кто не умеет учиться, разучиваться и переучиваться.».</p>
-						<span>- Элвин Тоффлер</span>
-					</div>
-					<div class="about_quotes_block">
-						<p>«Учитесь, пока другие спят, работайте, пока другие отдыхают, будьте готовы, пока другие расслабляются и мечтайте, пока другие плачутся.».</p>
-						<span>- Уильям Артур</span>
-					</div>
-					<div class="about_quotes_block">
-						<p>«Я знаю, что недостаточно успешен, но я достаточно мотивирован чтобы не беспокоиться об успехе».</p>
-						<span>- Абдрашов</span>
-					</div>
-					<div class="about_quotes_block">
-						<p>«Я знаю свои сильные стороны и осознаю, чему мне еще нужно научиться».</p>
-						<span>- Абдрашов</span>
-					</div>
-				</div>
-			</div>
-		</article>
-		<article class="work">
-			<div class="container" id="projectss">
-				<h2>Projects</h2>
-				<div class="featured_works">
-					<h3>Featured Works</h3>
-					<div class="featured_content">
-						<div class="featured_col">
-							<a href="https://textcopy.shymhub.ru/" class="featured_block" target="_blank">
-								<p class="featured_title">Text Copy</p>
-								<div class="featured_img">
-									<img src="image/lesson.png" alt="">
-								</div>
-								<p class="featured_text">Сайт для студентов</p>
-							</a>
-						</div>
-						<div class="featured_col">
-							<a href="http://adminpanel.shymhub.ru/" class="featured_block" target="_blank">
-								<p class="featured_title">Auezov курсы</p>
-								<div class="featured_img">
-									<img src="image/curs.png" alt="">
-								</div>
-								<p class="featured_text">Курсы</p>
-							</a>
-						</div>
-						<div class="featured_col">
-							<a href="https://lady-moon.github.io/" class="featured_block" target="_blank">
-								<p class="featured_title">Lady Moon</p>
-								<div class="featured_img">
-									<img src="image/lady.png" alt="">
-								</div>
-								<p class="featured_text">Лендинг</p>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="open_source">
-					<h3>Open Source</h3>
-					<div class="open_source_work">
-						<a href="https://github.com/abdrashov/abdrashov.github.io" target="_blank" class="open_source_block">
-							<p>abdrashov.github.io</p>
-							<p>My portfolio</p>
-						</a>
-						<a href="https://github.com/abdrashov" target="_blank" class="open_source_link">
-							<p><i class="fab fa-github"></i> See more</p>
-						</a>
-					</div>
-				</div>
-			</div>
-		</article>
-	</main>
-	<footer>
-		<div class="container">
-			<div class="footer">
-				<p>Made with <img alt="❤️" draggable="false" src="https://twemoji.maxcdn.com/2/72x72/2764.png" style="height: 1em; width: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;"> by Abdrashov Zamanbek</p>
-			</div>	
 		</div>
-	</footer>
+		<div class="col-md-8 col-sm-12">
+			<div class="experience">
+				<h2 class="white">Experiences</h2>
+					<div class="experience-content">
+						<h4 class="experience-title accent">Website Development</h4>
+						<h5>Our Media Company</h5><span></span>
+						<h5>2015 November - 2036 April</h5>
+						<p class="education-description"> 
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quidem sapiente voluptatum mollitia inventore nam magnam et vel quas dolore minus eos quasi dignissimos vitae quae eum facilis expedita explicabo corrupti ab delectus  
+						</p>
+					</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+ 
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<p>Copyright &copy; 2020 Your Easy Profile</p>
+				<ul class="social-icons">
+					<li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-google-plus"></a></li>
+					<li><a href="#" class="fa fa-twitter"></a></li>
+					<li><a href="#" class="fa fa-dribbble"></a></li>
+					<li><a href="#" class="fa fa-github"></a></li>
+					<li><a href="#" class="fa fa-behance"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+ 
+
 </body>
 </html>
