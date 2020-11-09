@@ -8,18 +8,11 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	 
 	 <style>
-    
-    html, body {
-  margin:0;border:0;padding:0;
-  font-size:16px;
-  font-family: 'Poppins', sans-serif;
-  overflow-x:hidden;
-  position: relative;
-  vertical-align: baseline;
- background-color: #7f5a83;
-background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
 
-}
+		body{
+			background-color: #7f5a83;
+			background: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+		}
 
  
 h1 {font-size:40px;}
@@ -43,38 +36,38 @@ h2 {
 }
 
 .white {
-  color: #fff;
+  	color: var(--bs-white);
 }
 
 .about,.skills,
 .education,.languages,
 .contact, .experience {
-  padding: 40px;
-  min-height: 330px;
+	padding: 40px;
+	min-height: 330px;
 }
 
+.skills,
 .education, .languages,
 .contact, .experience {
-  margin-top: 30px;
+ 	margin-top: 30px;
 }
 
- 
   
 header {
-  text-align: center;
-  min-height: 400px;
-  overflow: hidden;
-  position: relative;
-  padding-top: 160px;
-  padding-bottom: 140px;
+	text-align: center;
+	min-height: 400px;
+	overflow: hidden;
+	position: relative;
+	padding-top: 160px;
+	padding-bottom: 140px;
 }
 header img {
-  display: inline-block !important;
-    border: 3px solid white;
-    padding: 5px;
+	display: inline-block !important;
+	border: 3px solid white;
+	padding: 5px;
 }
 header h2 {
-  padding-top: 40px;
+  	padding-top: 40px;
 }
     
          
@@ -84,8 +77,8 @@ header h2 {
          
 /* about section */
 .about {
-  background: #fff;
-  box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
+	background: #3366CC;
+	color: #f5f5f5;
 }
          
          
@@ -93,7 +86,11 @@ header h2 {
          
 
 /* skills section */
-.skills {
+.BackEnd{
+  background: #fff;
+  box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
+}
+.FrontEnd{
   background: #3366CC;
   color: #f5f5f5;
 }
@@ -240,6 +237,19 @@ footer {
     
     
     </style>
+    	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(65616697, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true
+		});
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/65616697" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </head>
 <body>
 
@@ -248,47 +258,72 @@ footer {
 <header>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<img src="images/aboout_me.jpg" class="img-responsive img-circle" width="250">
+			<div class="col-12">
+				<img src="images/aboout_me.jpg" class="rounded-circle" width="250">
 				<h1 class="white">Привет, я Заманбек Абдрашов</h1>
-				<h1 class="white">Web&#8212;Разработчик <small>Самоучка</small></h1>
+				<h1 class="white">Web &#8212; Разработчик <small style="font-size: 1.3rem; color: #e5e5e5">Самоучка</small></h1>
 			</div>
 		</div>
 	</div>
 </header>
 
-<!-- about and skills section -->
+<!-- about section -->
 <section class="container">
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-12">
 			<div class="about">
-				<h3 class="accent">Easy Profile</h3>
-				<h2>Responsive Profile Card</h2>
-				 <p>
-				     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni possimus cum, reprehenderit, tempora voluptatum nostrum sed quidem deleniti eos libero ea, excepturi odio temporibus? Doloribus consequatur ullam, quaerat nihil laudantium, eos quod ab in maiores accusamus fugiat  
-				 </p>
+				<h2>Обо мне</h2>
+				<p>Привет, я - Заманбек Абдрашов, веб-разработчик самоучка, из Казахстана. Я изучаю современные веб-технологии для создания веб-сайтов, которые выглядят великолепно и работают как часы. Особенно я сосредоточен на BackEnd. В настоящее время я изучаю фреймворк Laravel.<br/><br/>А также я студент технического университета, специальность "математическое компьютерное моделирование". Обожаю математику и программирование.</p>
 			</div>
 		</div>
-		<div class="col-md-6">
-			<div class="skills">
-				<h2 class="white">Навыки</h2>
-				<strong>Laravel PHP MySQL</strong>
-				<span class="pull-right">60%</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar" 
-                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
-					</div>
-				<strong>JavaScript Html Css Bootstrap</strong>
-				<span class="pull-right">40%</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar" 
-                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
-					</div>
-				<strong>Git</strong>
+	</div>
+</section>
+<!-- skills section -->
+<section class="container">
+	<div class="row">
+		<div class="col-7">
+			<div class="skills BackEnd">
+				<h2 class="white">BackEnd</h2>
+				<strong>Laravel</strong>
 				<span class="pull-right">65%</span>
 					<div class="progress">
 						<div class="progress-bar progress-bar-primary" role="progressbar" 
                         aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
+					</div>
+				<strong>PHP</strong>
+				<span class="pull-right">60%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" 
+                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+					</div>
+				<strong>MySQL</strong>
+				<span class="pull-right">50%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" 
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+					</div>
+			</div>
+		</div>
+		<div class="col-5">
+			<div class="skills FrontEnd">
+				<h2 class="white">FrontEnd</h2>
+				<strong>Laravel</strong>
+				<span class="pull-right">65%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" 
+                        aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
+					</div>
+				<strong>PHP</strong>
+				<span class="pull-right">60%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" 
+                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+					</div>
+				<strong>MySQL</strong>
+				<span class="pull-right">50%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" 
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
 					</div>
 			</div>
 		</div>
@@ -298,27 +333,22 @@ footer {
 <!-- education and languages -->
 <section class="container">
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-12 col-lg-8">
 			<div class="education">
 				<h2 class="white">Education</h2>					 
-						<h4 class="education-title ">New Web Design</h4>
-							<div class="education-school">
-								<h5>School of Media</h5><span></span>
-								<h5>2015 March - 2020 November</h5>
-							</div>
-						  <p class="education-description"> 
-						   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates molestias, debitis sunt hic aspernatur cum rerum quis doloribus, consequuntur dolore sit nihil, eligendi optio ullam quos qui labore! Ipsam culpa inventore provident, consectetur  
-						</p>					 
+					<h4 class="education-title ">Auezov University 1943</h4>
+						<div class="education-school">
+							<h5>Математическое и компьютерное моделирование</h5><br>
+							<h5>2018 - 2022</h5>
+						</div>					 
 			</div>
 		</div>
-		<div class="col-md-4">
+		<div class="col-12 col-lg-4">
 			<div class="languages">
 				<h2>Languages</h2>
 					<ul>
 						<li>Japan / Koumou</li>
 						<li>English / Spanish</li>
-						<li>African / Japanese</li>
-						<li>Arabic / Hebrew</li>
 					</ul>
 			</div>
 		</div>
@@ -328,7 +358,7 @@ footer {
 <!-- contact and experience -->
 <section class="container">
 	<div class="row">
-		<div class="col-md-4 col-sm-12">
+		<div class="col-12 col-md-4">
 			<div class="contact">
 				<h2>Contact</h2>
 					<p><i class="fa fa-map-marker"></i> 123 Devli Road, Kenya</p>
@@ -337,7 +367,7 @@ footer {
 					<p><i class="fa fa-globe"></i> www.realcompany.com</p>
 			</div>
 		</div>
-		<div class="col-md-8 col-sm-12">
+		<div class="col-12 col-md-8">
 			<div class="experience">
 				<h2 class="white">Experiences</h2>
 					<div class="experience-content">
