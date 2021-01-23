@@ -42,9 +42,7 @@ h2 {
 	min-height: 330px;
 }
 
-.skills,
-.education, .languages,
-.contact, .experience {
+.skills, .education, .languages, .experience {
  	margin-top: 30px;
 }
 
@@ -81,26 +79,8 @@ header h2 {
          
 
 /* skills section */
-.BackEnd, .about-white{
-	background: var(--white);
-	color: #212529;
-	box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
-}
-.FrontEnd{
-  background: #3366CC;
-  color: #f5f5f5;
-}
-.skills .progress {
-  border-radius: 0px;
-  height: 4px;
-}
-.skills .progress .progress-bar-primary {
-  background: #204090;
-}
-.skills strong {
-  display: inline-block;
-  font-weight: normal;
-  padding-bottom: 6px;
+.skills{
+  background: #fff;
 }
          
          
@@ -121,7 +101,6 @@ header h2 {
   padding-right: 10px;
   padding-left: 20px;
 }
-
          
          
 /* languages section */
@@ -135,9 +114,7 @@ header h2 {
   padding-bottom: 6px;
 }
 
-         
-         
-         
+             
 /* contact section */
 .contact {
   background: #fff;  
@@ -147,23 +124,13 @@ header h2 {
 }
 
          
-         
-         
-         
 /* experience section */
 .experience {
   background: #3366CC;
   color: #f5f5f5;
 }
- .experience-content {
-  padding-bottom: 14px;
-}
-.experience h5 {
-  display: inline-block;
-}
-.experience span {
-  padding-right: 10px;
-  padding-left: 20px;
+.experience ul {
+  padding: 10px;
 }
 
          
@@ -240,10 +207,6 @@ footer {
   .about h2 {
     font-size: 24px;
   }
-  .education h4,
-  .experience h4 {
-    font-size: 20px;
-  }
 }
     
     
@@ -270,9 +233,9 @@ footer {
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<img src="images/aboout_me.jpg" class="rounded-circle" width="250">
+				<img src="images/about.jpg" class="rounded-circle" width="250">
 				<h1 class="white">Привет, я <span class="tm-title">Заманбек Абдрашов</span></h1>
-				<h1 class="white">Web &#8212; Разработчик <small style="font-size: 1.3rem; color: #e5e5e5">Самоучка</small></h1>
+				<h1 class="white">Web Разработчик</h1>
 				<ul class="social-icons text-center">
 				   <li>
 				   	<a target="_blank" href="mailto:abdrashovv@gmail.com" class="fa fa-google-plus"></a>
@@ -285,84 +248,73 @@ footer {
 		</div>	
 	</div>
 </header>
-<!-- about section -->
+
+<!-- about and contact -->
 <section class="container">
 	<div class="row">
-		<div class="col-lg-10">
+		<div class="col-lg-8">
 			<div class="about">
 				<h2>About Me</h2>
-				<p>Привет, я - Заманбек Абдрашов, веб-разработчик самоучка, из Казахстана. Я изучаю современные веб-технологии для создания веб-сайтов, которые выглядят великолепно и работают как часы. Особенно я сосредоточен на BackEnd. В настоящее время я изучаю фреймворк Laravel.<br/><br/>А также я студент технического университета, специальность "математическое компьютерное моделирование". Обожаю математику и программирование.</p>
+				<p>Привет, я - Заманбек Абдрашов, веб-разработчик из Казахстана. Я изучаю современные веб-технологии для создания веб-сайтов, которые выглядят великолепно и работают как часы. Особенно я сосредоточен на BackEnd. В настоящее время я изучаю фреймворк Laravel.<br/><br/>А также я студент технического университета, специальность "математическое компьютерное моделирование". Обожаю математику и программирование.</p>
 			</div>
 		</div>
-		<div class="col-lg-2 about-none">
-			<div class="about about-white">
-			</div>
-		</div>
-	</div>
-</section>
-<!-- skills section -->
-<section class="container">
-	<div class="row">
-		<div class="col-lg-7">
-			<div class="skills BackEnd">
-				<h2>BackEnd</h2>
-				<strong>Laravel</strong>
-				<span class="pull-right">50%</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar" 
-                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
-					</div>
-				<strong>PHP</strong>
-				<span class="pull-right">60%</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar" 
-                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-					</div>
-				<strong>MySQL</strong>
-				<span class="pull-right">50%</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar" 
-                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
-					</div>
-			</div>
-		</div>
-		<div class="col-lg-5">
-			<div class="skills FrontEnd">
-				<h2>FrontEnd</h2>
-				<strong>Bootstrap</strong>
-				<span class="pull-right">30%</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar" 
-                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
-					</div>
-				<strong>HTML CSS</strong>
-				<span class="pull-right">65%</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar" 
-                        aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
-					</div>
-				<strong>JavaScript</strong>
-				<span class="pull-right">10%</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar" 
-                        aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
-					</div>
+		<div class="col-12 col-lg-4">
+			<div class="contact">
+				<h2>Contact</h2>
+				<p><a target="_blank" href="https://goo.gl/maps/V4n2cPj4Sa9V1jkT6" class="text-dark"><i class="fa fa-map-marker"></i> Kazakhstan, Shymkent</a></p>
+				<p><a target="_blank" href="tel:" class="text-dark"><i class="fa fa-phone"></i> None</a></p>
+				<p><a target="_blank" href="mailto:abdrashovv@gmail.com" class="text-dark"><i class="fa fa-envelope"></i> abdrashovv@gmail.com</a></p>
+				<p><a target="_blank" href="https://abdrashov.github.io/" class="text-dark"><i class="fa fa-globe"></i> abdrashov.github.io</a></p>
 			</div>
 		</div>
 	</div>
 </section>
 
-<!-- education and languages -->
+<!-- education and skills -->
 <section class="container">
 	<div class="row">
+		<div class="col-lg-4 about-none">
+			<div class="skills">
+				<h2>Skills</h2>
+					<ul>
+						<li>PHP</li>
+						<li>Laravel</li>
+						<li>MySql, PgSql</li>
+						<li>Bootstrap</li>
+						<li>ООП</li>
+						<li>SOLID</li>
+					</ul>
+			</div>
+		</div>
 		<div class="col-12 col-lg-8">
 			<div class="education">
 				<h2>Education</h2>					 
-					<h4 class="education-title ">Auezov University 1943</h4>
-						<div class="education-school">
-							<h5>Математическое и компьютерное моделирование</h5><br>
-							<h5>2018 - 2022</h5>
-						</div>					 
+				<h4 class="education-title ">Auezov University 1943</h4>
+				<div class="education-school">
+					<h5>Математическое и компьютерное моделирование</h5><br>
+					<h5>2018 - 2022</h5>
+				</div>					 
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- languages and experience -->
+<section class="container">
+	<div class="row">
+		<div class="col-12 col-lg-8">
+			<div class="experience">
+				<h2>Featured Works</h2>
+					<ul>
+						<li>
+							<a target="_blank" href="http://auezov.shymhub.ru/" class="text-white">
+								Auezov курсы
+							</a> / 
+							<a target="_blank" href="https://github.com/abdrashov/Auezov-Course" class="text-white">
+								Git
+							</a>
+						</li>
+					</ul>
 			</div>
 		</div>
 		<div class="col-12 col-lg-4">
@@ -372,36 +324,6 @@ footer {
 						<li>Kazakh / Қазақ</li>
 						<li>Russian / Русский</li>
 					</ul>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- contact and experience -->
-<section class="container">
-	<div class="row">
-		<div class="col-12 col-lg-4">
-			<div class="contact">
-				<h2>Contact</h2>
-					<p><a target="_blank" href="https://goo.gl/maps/V4n2cPj4Sa9V1jkT6" class="text-dark"><i class="fa fa-map-marker"></i> Kazakhstan, Shymkent</a></p>
-					<p><a target="_blank" href="tel:" class="text-dark"><i class="fa fa-phone"></i> None</a></p>
-					<p><a target="_blank" href="mailto:abdrashovv@gmail.com" class="text-dark"><i class="fa fa-envelope"></i> abdrashovv@gmail.com</a></p>
-					<p><a target="_blank" href="https://abdrashov.github.io/" class="text-dark"><i class="fa fa-globe"></i> abdrashov.github.io</a></p>
-			</div>
-		</div>
-		<div class="col-12 col-lg-8">
-			<div class="experience">
-				<h2>Featured Works</h2>
-					<div class="experience-content">
-						<a target="_blank" href="http://courses.shymhub.ru/" class="text-white h4">Auezov курсы</a><br>
-						<p class="education-description"> 
-						Сайт для прохождения курсов для студентов
-						</p>
-						<a target="_blank" href="https://test.shymhub.ru/" class="text-white h4">Test</a><br>
-						<p class="education-description"> 
-						Сайт для подготовки к сессиям
-						</p>
-					</div>
 			</div>
 		</div>
 	</div>
